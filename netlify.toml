@@ -1,4 +1,3 @@
 [build]
-  base = "ckefa-website"
   command = "npm run build"
-  publish = "ckefa-website/dist"
+  publish = "dist"
