@@ -189,7 +189,11 @@ export default function CkefaSoftwareSolutionsWebsite() {
   className="mt-8 space-y-4"
 >
   <input type="hidden" name="_subject" value="New Enquiry from CKEFA Website" />
-  <input type="hidden" name="_redirect" value="http://localhost:5173/" />
+  <input
+  type="hidden"
+  name="_redirect"
+  value="https://deft-seahorse-ckefa-website.netlify.app/"
+/>
 
   <div>
     <label className="mb-2 block text-sm font-medium text-white">Full Name</label>
