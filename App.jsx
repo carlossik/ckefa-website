@@ -183,68 +183,47 @@ export default function CkefaSoftwareSolutionsWebsite() {
                 Use the contact details below or submit an enquiry through the contact form.
               </p>
 
-              <form
-  action="https://formspree.io/f/mwvaload"
-  method="POST"
-  className="mt-8 space-y-4"
->
-  <input type="hidden" name="_subject" value="New Enquiry from CKEFA Website" />
-  <input
-  type="hidden"
-  name="_redirect"
-  value="https://deft-seahorse-ckefa-website.netlify.app/"
-/>
+              <form className="mt-8 space-y-4">
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-white">Full Name</label>
+                  <input
+                    type="text"
+                    placeholder="Your full name"
+                    className="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500"
+                  />
+                </div>
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-white">Email Address</label>
+                  <input
+                    type="email"
+                    placeholder="Your email address"
+                    className="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500"
+                  />
+                </div>
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-white">Phone Number</label>
+                  <input
+                    type="tel"
+                    placeholder="Your phone number"
+                    className="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500"
+                  />
+                </div>
+                <div>
+                  <label className="mb-2 block text-sm font-medium text-white">How can we help?</label>
+                  <textarea
+                    rows={5}
+                    placeholder="Tell us about your project or enquiry"
+                    className="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="rounded-2xl bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
+                >
+                  Send Enquiry
+                </button>
+              </form>
 
-  <div>
-    <label className="mb-2 block text-sm font-medium text-white">Full Name</label>
-    <input
-      name="fullName"
-      type="text"
-      required
-      placeholder="Your full name"
-      className="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500"
-    />
-  </div>
-
-  <div>
-    <label className="mb-2 block text-sm font-medium text-white">Email Address</label>
-    <input
-      name="email"
-      type="email"
-      required
-      placeholder="Your email address"
-      className="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500"
-    />
-  </div>
-
-  <div>
-    <label className="mb-2 block text-sm font-medium text-white">Phone Number</label>
-    <input
-      name="phone"
-      type="tel"
-      placeholder="Your phone number"
-      className="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500"
-    />
-  </div>
-
-  <div>
-    <label className="mb-2 block text-sm font-medium text-white">How can we help?</label>
-    <textarea
-      name="message"
-      rows={5}
-      required
-      placeholder="Tell us about your project or enquiry"
-      className="w-full rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-3 text-sm text-white outline-none placeholder:text-slate-500"
-    />
-  </div>
-
-  <button
-    type="submit"
-    className="rounded-2xl bg-emerald-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-emerald-400"
-  >
-    Send Enquiry
-  </button>
-</form>
               <div className="mt-8 space-y-4 text-sm text-slate-300">
                 <div className="rounded-2xl border border-white/10 bg-slate-950/50 p-4">
                   <p className="font-medium text-white">Email Enquiries</p>
@@ -262,6 +241,53 @@ export default function CkefaSoftwareSolutionsWebsite() {
             </div>
           </div>
         </section>
+              <section id="case-studies" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-400">Case Studies</p>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+              Delivering measurable outcomes across complex environments
+            </h2>
+          </div>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+              <h3 className="text-lg font-semibold">Government Testing Programme</h3>
+              <p className="mt-3 text-sm text-slate-300">
+                Delivered structured QA leadership and automation strategy for a high-assurance government system, improving release confidence and reducing regression risk.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+              <h3 className="text-lg font-semibold">CMS Automation & Observability</h3>
+              <p className="mt-3 text-sm text-slate-300">
+                Built end-to-end automation validating DQMS logs and CloudWatch integration, significantly improving traceability and system observability.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+              <h3 className="text-lg font-semibold">Automation Framework Delivery</h3>
+              <p className="mt-3 text-sm text-slate-300">
+                Designed scalable Playwright-based frameworks enabling faster regression cycles and improved cross-environment reliability.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-white/10 bg-slate-900/60">
+          <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8 text-center">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              Ready to strengthen your software delivery?
+            </h2>
+            <p className="mt-6 text-slate-300">
+              Partner with CKEFA Software Solutions Ltd to improve quality, reduce risk, and deliver with confidence.
+            </p>
+            <a
+              href="#contact"
+              className="mt-8 inline-block rounded-2xl bg-emerald-500 px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-emerald-400"
+            >
+              Book a Consultation
+            </a>
+          </div>
+        </section>
+
       </main>
 
       <footer className="border-t border-white/10 bg-slate-950">
