@@ -12,11 +12,12 @@ export default function CkefaSoftwareSolutionsWebsite() {
           </div>
 
           <nav className="hidden gap-6 text-sm text-slate-200 md:flex">
-            <a href="#about" className="transition hover:text-white">About</a>
-            <a href="#services" className="transition hover:text-white">Services</a>
-            <a href="#why-us" className="transition hover:text-white">Why Us</a>
-            <a href="#contact" className="transition hover:text-white">Contact</a>
-          </nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#services">Services</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#contact">Contact</a>
+</nav>
         </div>
       </header>
 
@@ -88,6 +89,57 @@ export default function CkefaSoftwareSolutionsWebsite() {
                 improvement and decision-making.
               </p>
             </div>
+          </div>
+                </section>
+
+        {/* Experience Section */}
+
+        <section id="experience" className="border-t border-white/10 bg-slate-950">
+          <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+
+            <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-emerald-400">
+              Trusted Experience
+            </p>
+
+            <h2 className="mt-4 text-center text-3xl font-bold tracking-tight sm:text-4xl">
+              Experience supporting leading organisations across government and industry
+            </h2>
+
+            <p className="mx-auto mt-6 max-w-3xl text-center text-base leading-8 text-slate-300">
+              Our consultants have delivered software engineering, quality assurance,
+              automation, cyber security and AI consultancy services across government,
+              defence, retail, insurance, financial services and enterprise technology.
+            </p>
+
+            <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
+
+              {[
+                "IKEA",
+                "INSHUR",
+                "QinetiQ",
+                "Ministry of Defence",
+                "Department for Education",
+                "HMRC",
+                "Nasdaq",
+                "Grosvenor Technology"
+              ].map((company) => (
+                <div
+                  key={company}
+                  className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center"
+                >
+                  <h3 className="font-semibold text-white">
+                    {company}
+                  </h3>
+                </div>
+              ))}
+
+            </div>
+
+            <p className="mx-auto mt-8 max-w-3xl text-center text-xs leading-6 text-slate-500">
+              Engagements include consultancy, contracting and project delivery across
+              public and private sector organisations.
+            </p>
+
           </div>
         </section>
 
