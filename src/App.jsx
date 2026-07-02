@@ -7,7 +7,7 @@ export default function CkefaSoftwareSolutionsWebsite() {
           <div>
             <h1 className="text-xl font-bold tracking-wide">CKEFA Software Solutions Ltd</h1>
             <p className="text-sm text-slate-300">
-              Software Development, Testing, QA Leadership, AI Consultancy, Governance and Security
+              Software Engineering • Quality Engineering • Artificial Intelligence • Cyber Security
             </p>
           </div>
 
@@ -28,15 +28,15 @@ export default function CkefaSoftwareSolutionsWebsite() {
             </p>
 
             <h2 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-              Helping organisations deliver reliable, secure, scalable and AI-enabled digital solutions.
+              Helping organisations build, secure, test and transform digital products with confidence.
             </h2>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-              CKEFA Software Solutions Ltd provides specialist software development, software testing,
-              quality assurance leadership, AI consultancy, AI governance, agentic AI implementation,
-              security-focused validation, consultancy and training services. We help organisations build
-              robust digital solutions, improve quality outcomes, adopt AI responsibly, reduce delivery risk,
-              and strengthen confidence across the software lifecycle.
+               CKEFA Software Solutions Ltd provides specialist software development, software testing,
+  quality assurance leadership, AI consultancy, AI governance, agentic AI implementation,
+  cyber security consultancy, AI security, security-focused validation, consultancy and training
+  services. We help organisations build robust digital solutions, improve quality outcomes,
+  adopt AI responsibly, reduce cyber risk and strengthen confidence across the software lifecycle.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -183,6 +183,14 @@ export default function CkefaSoftwareSolutionsWebsite() {
               </p>
             </div>
           </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+  <h3 className="text-xl font-semibold">Cyber Security Consultancy</h3>
+  <p className="mt-4 text-sm leading-7 text-slate-300">
+    Cyber security advisory support covering security assessments, secure software development
+    practices, vulnerability management, security testing, governance, risk management and
+    practical cyber resilience improvement.
+  </p>
+</div>
         </section>
 
         <section id="why-us" className="border-t border-white/10 bg-slate-900/60">
@@ -230,7 +238,31 @@ export default function CkefaSoftwareSolutionsWebsite() {
             </div>
           </div>
         </section>
+<section className="border-t border-white/10 bg-slate-900/60">
+  <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
+    <div className="max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-400">
+        AI and Cyber Security
+      </p>
 
+      <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+        Helping organisations adopt AI securely and responsibly.
+      </h2>
+
+      <p className="mt-6 text-base leading-8 text-slate-300">
+        As organisations accelerate AI adoption, the threat surface continues to expand. Large
+        Language Models, autonomous AI agents, data pipelines, APIs and AI-enabled decision systems
+        introduce new security, governance and operational risks.
+      </p>
+
+      <p className="mt-4 text-base leading-8 text-slate-300">
+        CKEFA Software Solutions helps organisations address these challenges by combining cyber
+        security consultancy, AI governance, secure software engineering, AI security and quality
+        assurance into a practical, integrated delivery approach.
+      </p>
+    </div>
+  </div>
+</section>
         <section id="contact" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
@@ -249,12 +281,12 @@ export default function CkefaSoftwareSolutionsWebsite() {
               <div className="mt-8 space-y-4 text-sm text-slate-200">
                 <p><span className="font-semibold text-white">Company:</span> CKEFA Software Solutions Ltd</p>
                 <p><span className="font-semibold text-white">Email:</span> info@ckefa.co.uk</p>
-                <p><span className="font-semibold text-white">Phone:</span> 07951750370</p>
+                <p><span className="font-semibold text-white">Phone:</span> +44(02083039053),+44(07951750370)</p>
                 <p><span className="font-semibold text-white">Location:</span> United Kingdom</p>
                 <p>
                   <span className="font-semibold text-white">Services:</span> Software Development, Software Testing,
-                  QA Leadership, Test Automation, AI Consultancy, AI Governance, Agentic AI Solutions, AI Security,
-                  Consultancy and Training
+  QA Leadership, Test Automation, AI Consultancy, AI Governance, Agentic AI Solutions, AI Security,
+  Cyber Security Consultancy, Consultancy and Training
                 </p>
               </div>
             </div>
@@ -406,7 +438,7 @@ export default function CkefaSoftwareSolutionsWebsite() {
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-6 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <p>© 2026 CKEFA Software Solutions Ltd. All rights reserved.</p>
           <p>
-            Software Development | Software Testing | QA Leadership | AI Consultancy | AI Governance | Agentic AI | Security
+            Software Engineering | Quality Engineering | Artificial Intelligence | Cyber Security
           </p>
         </div>
       </footer>
