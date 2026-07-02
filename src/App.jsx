@@ -1,5 +1,23 @@
-
+import ikeaLogo from './assets/logos/ikea.png'
+import inshurLogo from './assets/logos/inshur.png'
+import qinetiqLogo from './assets/logos/qinetiq.png'
+import modLogo from './assets/logos/mod.png'
+import dfeLogo from './assets/logos/dfe.png'
+import hmrcLogo from './assets/logos/hmrc.png'
+import nasdaqLogo from './assets/logos/nasdaq.png'
+import grosvenorLogo from './assets/logos/grosvenor.png'
 export default function CkefaSoftwareSolutionsWebsite() {
+  const organisations = [
+    { name: 'IKEA', logo: ikeaLogo },
+    { name: 'INSHUR', logo: inshurLogo },
+    { name: 'QinetiQ', logo: qinetiqLogo },
+    { name: 'Ministry of Defence', logo: modLogo },
+    { name: 'Department for Education', logo: dfeLogo },
+    { name: 'HMRC', logo: hmrcLogo },
+    { name: 'Nasdaq', logo: nasdaqLogo },
+    { name: 'Grosvenor Technology', logo: grosvenorLogo },
+  ]
+
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <header className="border-b border-white/10 bg-slate-950/90 backdrop-blur">
@@ -112,33 +130,24 @@ export default function CkefaSoftwareSolutionsWebsite() {
             </p>
 
             <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
-
-              {[
-                "IKEA",
-                "INSHUR",
-                "QinetiQ",
-                "Ministry of Defence",
-                "Department for Education",
-                "HMRC",
-                "Nasdaq",
-                "Grosvenor Technology"
-              ].map((company) => (
-                <div
-                  key={company}
-                  className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center"
-                >
-                  <h3 className="font-semibold text-white">
-                    {company}
-                  </h3>
-                </div>
-              ))}
-
-            </div>
-
-            <p className="mx-auto mt-8 max-w-3xl text-center text-xs leading-6 text-slate-500">
-              Engagements include consultancy, contracting and project delivery across
-              public and private sector organisations.
-            </p>
+  {organisations.map((company) => (
+    <div
+      key={company.name}
+      className="flex h-36 items-center justify-center rounded-2xl border border-white/10 bg-white p-6 shadow-lg transition duration-300 hover:border-emerald-400 hover:scale-105"
+    >
+      <img
+        src={company.logo}
+        alt={company.name}
+        className="max-h-20 max-w-44 object-contain"
+      />
+    </div>
+  ))}
+</div>
+            <p className="mx-auto mt-8 max-w-4xl text-center text-slate-300 leading-8">
+Our consultants have successfully delivered software engineering, quality assurance,
+cyber security and AI solutions across government, defence, retail, financial services,
+insurance and enterprise organisations.
+</p>
 
           </div>
         </section>
