@@ -222,22 +222,19 @@ export default function App() {
             <div className="hero-copy">
               <div className="eyebrow"><span className="eyebrow-line"/> SOFTWARE ENGINEERING · CYBERSECURITY · AI</div>
               <h1>Build what’s next.<br/><span>Secure what matters.</span></h1>
-              <p className="hero-intro">We design, engineer and protect digital solutions that help organisations innovate with confidence — from dependable software and quality engineering to cybersecurity and secure AI adoption.</p>
+              <p className="hero-intro">A technology consultancy for the modern enterprise — combining cybersecurity, secure AI adoption, DevSecOps and software engineering to help organisations build resilient, intelligent and future-ready solutions.</p>
               <div className="hero-actions">
-                <a href="#contact" className="button button-primary">Discuss your project <Arrow /></a>
-                <a href="#work" className="button button-subtle">Explore our work <Arrow diagonal /></a>
+                <a href="#contact" className="button button-primary">Let’s discuss your project <Arrow /></a>
+                <a href="#services" className="button button-subtle">Explore our services <Arrow diagonal /></a>
               </div>
-              <div className="hero-proof"><span className="proof-dash"/><span>UK-based expertise</span><b>•</b><span>Practical delivery</span><b>•</b><span>Security-first thinking</span></div>
+              <div className="hero-proof hero-proof-grid">
+                <div className="hero-proof-item"><ServiceIcon title="Cybersecurity & resilience" /><span>Stronger security<br/>and risk resilience</span></div>
+                <div className="hero-proof-item"><ServiceIcon title="AI security & readiness" /><span>Practical, high-impact<br/>AI readiness</span></div>
+                <div className="hero-proof-item"><ServiceIcon title="Software engineering" /><span>High-quality,<br/>scalable software</span></div>
+              </div>
             </div>
-            <div className="hero-art" aria-label="CKEFA Software Solutions brand graphic">
-              <div className="orb orb-one"/><div className="orb orb-two"/>
-              <div className="hero-visual-panel">
-                <div className="visual-panel-top"><span className="visual-indicator"/> THINK BEYOND THE BUILD <span className="visual-plus">+</span></div>
-                <img className="hero-logo" src="/ckefa-logo.webp" alt="CKEFA Software Solutions Ltd — Code, Build, Innovate" />
-                <div className="visual-divider"/>
-                <div className="visual-panel-bottom"><span><ShieldIcon/> Security by design</span><span>CODE · BUILD · INNOVATE</span></div>
-              </div>
-              <div className="floating-card"><span className="floating-icon">↗</span><div><strong>AI-ready starts with secure foundations.</strong><span>Infrastructure · Data · Governance · Resilience</span></div></div>
+            <div className="hero-art hero-art-secure" aria-label="Secure global technology illustration">
+              <img className="hero-secure-globe" src="/ckefa-secure-globe.webp" alt="Digital globe with a shield and padlock representing secure connected infrastructure" loading="eager" />
             </div>
           </div>
         </section>
@@ -245,7 +242,7 @@ export default function App() {
         <section className="expertise-strip" aria-label="Our areas of expertise"><div className="container strip-inner"><span className="strip-label">WHAT WE DO</span><span>Cybersecurity</span><span>AI readiness</span><span>Software engineering</span><span>Quality assurance</span><span>Digital resilience</span><span>DevSecOps</span></div></section>
 
         <section id="services" className="section services-section">
-          <div className="container"><div className="section-topline"> / WHAT WE DO</div><div className="section-intro"><div><h2>Technical expertise.<br/><em>Business impact.</em></h2></div><p>From strategy through delivery, we connect secure engineering, quality and innovation to the outcomes that matter to your business.</p></div>
+          <div className="container"><div className="section-topline">OUR SERVICES</div><div className="section-intro"><div><h2>Technology expertise for a more secure,<br/><em>intelligent enterprise.</em></h2></div><p>From secure cloud foundations to AI adoption and tailored software, we help turn complex technology challenges into sustainable business value.</p></div>
             <div className="services-grid">{services.map(s => <article className="service-card" key={s.number}><div className="service-icon-badge"><ServiceIcon title={s.title} /></div><h3>{s.title}</h3><p>{s.description}</p><div className="service-tag">{s.tag}</div></article>)}</div>
           </div>
         </section>

@@ -78,3 +78,49 @@
 .services-grid > .service-card:last-child .service-tag{grid-column:2;grid-row:2;align-self:start;padding-top:0}
 .services-grid > .service-card:last-child p{grid-column:3;grid-row:1/3;max-width:680px;font-size:13px}
 @media(max-width:760px){.services-grid > .service-card:last-child{display:flex;flex-direction:column;align-items:stretch;min-height:262px;padding:25px}.services-grid > .service-card:last-child h3{margin:22px 0 12px}.services-grid > .service-card:last-child .service-tag{margin-top:auto;padding-top:25px}.services-grid > .service-card:last-child p{font-size:12px}}
+
+/* CKEFA BALANCED THEME 2026-11-23 — approved lighter slate visual direction.
+   Layered at the end to preserve the original component styles and mobile navigation. */
+:root{background:#0d202a;color:#e9f0ef}
+.site-header{background:#091b25ed;border-bottom:1px solid #36515a69}
+.hero-section{background:radial-gradient(ellipse at 76% 46%,#1d5963c2 0%,#113c4b9c 34%,transparent 68%),linear-gradient(115deg,#0b2533 0%,#0e3440 65%,#0c2937 100%)}
+.hero-noise{opacity:.13}
+.hero-layout{grid-template-columns:1.02fr .98fr;min-height:580px;gap:10px;padding-top:38px;padding-bottom:50px}
+.hero-copy{max-width:665px}
+.hero-copy h1{font-size:clamp(43px,4.8vw,68px);letter-spacing:-2.8px;margin-top:23px}
+.hero-intro{color:#bad4d8;font-size:clamp(15px,1.15vw,18px);line-height:1.72;max-width:570px;margin-top:20px}
+.hero-actions{margin-top:28px}
+.hero-art-secure{height:465px;overflow:visible;isolation:isolate}
+.hero-secure-globe{width:135%;max-width:800px;height:auto;object-fit:contain;display:block;transform:translateX(8%);filter:saturate(1.07) drop-shadow(0 18px 45px #020f174d)}
+.hero-proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;max-width:680px;margin-top:38px;color:#c8dfdf}
+.hero-proof-item{display:flex;gap:10px;align-items:center;font-size:12px;line-height:1.42}
+.hero-proof-item+.hero-proof-item{border-left:1px solid #9bbab64d;padding-left:12px}
+.hero-proof-item .service-icon{width:29px;height:29px;min-width:29px;color:#c0ed57}
+.expertise-strip{background:#102b36}
+.services-section{background:#0d202a}
+.services-section .section-topline{display:block;text-align:center;font-size:12px;letter-spacing:2.3px;margin-bottom:15px}
+.services-section .section-intro{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;margin-bottom:38px}
+.services-section .section-intro h2{font-size:clamp(29px,3.05vw,43px);letter-spacing:-1.45px;line-height:1.18}
+.services-section .section-intro h2 em{color:#e9f0ef}
+.services-section .section-intro p{max-width:760px;font-size:15px;line-height:1.7;margin:0;color:#bad1d4}
+.services-grid{gap:17px}
+.services-grid>.service-card{min-height:281px;padding:28px;background:linear-gradient(145deg,#193b46,#15313b);border:1px solid #41656b70;border-radius:14px;box-shadow:0 10px 35px #06192342}
+.services-grid>.service-card:hover{border-color:#bce9528c;box-shadow:0 16px 38px #0619236b}
+.services-grid .service-icon-badge{background:transparent;border:0;align-self:flex-start;width:46px;height:46px;min-height:46px}
+.services-grid .service-icon{width:35px;height:35px}
+.services-grid .service-card h3{font-size:20px;letter-spacing:-.5px;line-height:1.35;margin-top:14px}
+.services-grid .service-card p{font-size:14px;line-height:1.7;color:#c2d5d7}
+.services-grid .service-tag{font-size:11px;color:#c1ec68}
+.services-grid>.service-card:last-child{background:linear-gradient(105deg,#1d4c50,#183644);border-color:#7baf8c74}
+.cyber-section{background:radial-gradient(ellipse at 15% 55%,#2d6a5964,transparent 68%),#14313b}
+.risk-panel{background:#152e38;border-color:#bde95160}
+.work-section{background:#0b222c}
+.project-card{background:#19313c;border-color:#67838b31}
+.about-section{background:#102833;border-top-color:#ffffff17}
+.contact-section{background:radial-gradient(ellipse at 0 55%,#2b645459,transparent 55%),#12323a}
+.contact-card{background:#17373e;border-color:#bcdd7a62}
+.experience-head p,.about-content p,.section-intro p{line-height:1.8}
+/* Keep the original logo tiles light so existing corporate brand marks remain legible. */
+@media(max-width:1050px){.hero-layout{min-height:570px}.hero-secure-globe{width:125%;transform:translateX(0)}.hero-proof-grid{gap:8px}.hero-proof-item{font-size:11px}.hero-proof-item+.hero-proof-item{padding-left:8px}}
+@media(max-width:760px){.hero-layout{grid-template-columns:1fr;min-height:unset;gap:10px;padding-top:48px;padding-bottom:35px}.hero-copy h1{font-size:clamp(40px,8vw,57px)}.hero-art-secure{height:320px;max-width:100%;overflow:hidden}.hero-secure-globe{width:100%;max-width:630px;transform:translateX(0)}.hero-proof-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:30px}.hero-proof-item{gap:6px;font-size:10px}.hero-proof-item+.hero-proof-item{padding-left:7px}.hero-proof-item .service-icon{width:24px;height:24px;min-width:24px}.services-section .section-intro h2{font-size:clamp(28px,6vw,38px)}.services-section .section-intro p{font-size:14px}.services-grid>.service-card{min-height:255px;padding:22px}.services-grid .service-card h3{font-size:18px}.services-grid .service-card p{font-size:13px}}
+@media(max-width:460px){.hero-art-secure{height:240px}.hero-secure-globe{width:116%;max-width:none;transform:translateX(-5%)}.hero-proof-grid{grid-template-columns:1fr;gap:12px;margin-top:27px}.hero-proof-item,.hero-proof-item+.hero-proof-item{font-size:12px;padding:0;border:0}.services-section .section-intro h2 br{display:none}}
