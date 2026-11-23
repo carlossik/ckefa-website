@@ -124,3 +124,33 @@
 @media(max-width:1050px){.hero-layout{min-height:570px}.hero-secure-globe{width:125%;transform:translateX(0)}.hero-proof-grid{gap:8px}.hero-proof-item{font-size:11px}.hero-proof-item+.hero-proof-item{padding-left:8px}}
 @media(max-width:760px){.hero-layout{grid-template-columns:1fr;min-height:unset;gap:10px;padding-top:48px;padding-bottom:35px}.hero-copy h1{font-size:clamp(40px,8vw,57px)}.hero-art-secure{height:320px;max-width:100%;overflow:hidden}.hero-secure-globe{width:100%;max-width:630px;transform:translateX(0)}.hero-proof-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:30px}.hero-proof-item{gap:6px;font-size:10px}.hero-proof-item+.hero-proof-item{padding-left:7px}.hero-proof-item .service-icon{width:24px;height:24px;min-width:24px}.services-section .section-intro h2{font-size:clamp(28px,6vw,38px)}.services-section .section-intro p{font-size:14px}.services-grid>.service-card{min-height:255px;padding:22px}.services-grid .service-card h3{font-size:18px}.services-grid .service-card p{font-size:13px}}
 @media(max-width:460px){.hero-art-secure{height:240px}.hero-secure-globe{width:116%;max-width:none;transform:translateX(-5%)}.hero-proof-grid{grid-template-columns:1fr;gap:12px;margin-top:27px}.hero-proof-item,.hero-proof-item+.hero-proof-item{font-size:12px;padding:0;border:0}.services-section .section-intro h2 br{display:none}}
+/* CKEFA INTERACTIVE EXPERTISE STRIP 2026-11-23 */
+/* Progressive, accessible expansion below the strip, never over page content. */
+.expertise-strip{position:relative;background:#102b36;border-top:1px solid #ffffff19;border-bottom:1px solid #ffffff19}
+.expertise-strip .strip-inner{display:flex;align-items:center;gap:23px;min-height:79px;overflow:visible}
+.expertise-strip .strip-label{flex-shrink:0;font-size:10px;letter-spacing:1.8px}
+.expertise-topics{display:flex;align-items:center;justify-content:space-between;flex:1;min-width:0;gap:4px}
+.expertise-trigger{appearance:none;background:transparent;border:1px solid transparent;border-radius:7px;color:#dbe9e7;font-family:inherit;font-size:12px;font-weight:680;line-height:1.25;white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:12px 7px;transition:color .2s,background .2s,border-color .2s;cursor:pointer}
+.expertise-trigger:hover,.expertise-trigger.is-active{color:#d6fc86;background:#bce95213;border-color:#bce95266}
+.expertise-trigger:focus-visible,.expertise-close:focus-visible,.expertise-detail-actions a:focus-visible{outline:2px solid #c7f577;outline-offset:3px}
+.expertise-caret{display:inline-block;font-size:16px;line-height:1;transform:translateY(-2px);opacity:.75;transition:transform .2s}
+.expertise-trigger.is-active .expertise-caret{transform:rotate(180deg) translateY(1px)}
+.expertise-disclosure{padding-bottom:22px}
+.expertise-disclosure[hidden]{display:none!important}
+.expertise-detail-card{position:relative;display:flex;align-items:flex-start;gap:23px;padding:27px 64px 29px 30px;background:linear-gradient(135deg,#1b4650,#12313b);border:1px solid #7cad9d6e;border-radius:14px;box-shadow:0 15px 35px #06192354;animation:ckefa-expertise-reveal .22s ease-out}
+.expertise-detail-icon{width:52px;height:52px;flex:0 0 52px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:#bce95212;border:1px solid #bce95245}
+.expertise-detail-icon .service-icon{width:32px;height:32px;color:#c6f470}
+.expertise-detail-copy{max-width:900px}
+.expertise-detail-copy .expertise-eyebrow{margin:0 0 6px;color:#bce952;letter-spacing:1.8px;font-size:10px;font-weight:800}
+.expertise-detail-copy h3{margin:0 0 8px;font-size:clamp(19px,2vw,25px);line-height:1.3;color:#f3f8f4}
+.expertise-detail-copy>p:not(.expertise-eyebrow){margin:0;font-size:14px;line-height:1.8;color:#c5d9d9}
+.expertise-detail-actions{display:flex;align-items:center;flex-wrap:wrap;gap:23px;margin-top:16px}
+.expertise-detail-actions a{font-size:13px;font-weight:750;color:#c6f470;text-decoration:none}
+.expertise-detail-actions a:hover{text-decoration:underline;text-underline-offset:4px}
+.expertise-close{position:absolute;top:17px;right:18px;border:1px solid #ffffff3a;border-radius:8px;width:35px;height:35px;display:flex;align-items:center;justify-content:center;background:#ffffff08;color:#edf7f0;font-size:24px;line-height:1;cursor:pointer}
+.expertise-close:hover{background:#ffffff20}
+@keyframes ckefa-expertise-reveal{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1130px){.expertise-strip .strip-inner{display:block;min-height:auto;padding-top:13px;padding-bottom:11px}.expertise-topics{justify-content:flex-start;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;padding:8px 0 4px}.expertise-trigger{flex:0 0 auto;padding:10px 12px;border-color:#ffffff1c}.expertise-strip .strip-label{display:block}}
+@media(max-width:760px){.expertise-detail-card{padding:22px 48px 24px 20px;gap:14px}.expertise-detail-icon{width:43px;height:43px;flex-basis:43px}.expertise-detail-icon .service-icon{width:26px;height:26px}.expertise-detail-copy>p:not(.expertise-eyebrow){font-size:13px}.expertise-detail-actions{gap:12px 18px}.expertise-trigger{font-size:13px}}
+@media(max-width:460px){.expertise-detail-card{display:block;padding:20px 45px 22px 20px}.expertise-detail-icon{margin-bottom:12px}.expertise-detail-actions{display:flex;flex-direction:column;align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){.expertise-detail-card{animation:none}.expertise-caret,.expertise-trigger{transition:none}}

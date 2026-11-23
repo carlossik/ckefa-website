@@ -21,6 +21,16 @@ const nav = [
   { label: 'About', href: '#about' },
 ]
 
+const expertiseTopics = [
+  { id: 'cyber', label: 'Cybersecurity', title: 'Cybersecurity & resilience' },
+  { id: 'ai', label: 'AI readiness', title: 'AI security & readiness' },
+  { id: 'software', label: 'Software engineering', title: 'Software engineering' },
+  { id: 'quality', label: 'Quality engineering', title: 'Quality engineering & automation' },
+  { id: 'governance', label: 'AI governance', title: 'AI governance & advisory' },
+  { id: 'training', label: 'Training & consultancy', title: 'Training & technical consultancy' },
+  { id: 'devsecops', label: 'DevSecOps', title: 'DevSecOps & cloud security' },
+]
+
 const services = [
   {  title: 'Cybersecurity & resilience', description: 'Security assessments, application and API risk reviews, secure development practices, vulnerability management and actionable resilience improvements.', tag: 'Risk-led security' },
   {  title: 'AI security & readiness', description: 'Assess the people, policies, infrastructure, data controls and security foundations needed to introduce AI safely and responsibly.', tag: 'Secure AI adoption' },
@@ -186,6 +196,9 @@ function ContactForm() {
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [activeExpertise, setActiveExpertise] = useState(null)
+  const selectedTopic = expertiseTopics.find(topic => topic.id === activeExpertise)
+  const selectedService = services.find(service => service.title === selectedTopic?.title)
   useEffect(() => {
     const token = import.meta.env.VITE_CF_WEB_ANALYTICS_TOKEN
     if (!token || import.meta.env.DEV) return undefined
@@ -239,7 +252,39 @@ export default function App() {
           </div>
         </section>
 
-        <section className="expertise-strip" aria-label="Our areas of expertise"><div className="container strip-inner"><span className="strip-label">WHAT WE DO</span><span>Cybersecurity</span><span>AI readiness</span><span>Software engineering</span><span>Quality assurance</span><span>Digital resilience</span><span>DevSecOps</span></div></section>
+        <section className="expertise-strip" aria-label="Our areas of expertise" onKeyDown={event => { if (event.key === 'Escape') setActiveExpertise(null) }}>
+  <div className="container strip-inner">
+    <span className="strip-label" id="expertise-strip-label">WHAT WE DO</span>
+    <div className="expertise-topics" role="group" aria-labelledby="expertise-strip-label">
+      {expertiseTopics.map(topic => (
+        <button key={topic.id} type="button"
+          className={'expertise-trigger' + (activeExpertise === topic.id ? ' is-active' : '')}
+          aria-expanded={activeExpertise === topic.id}
+          aria-controls="expertise-detail"
+          onClick={() => setActiveExpertise(activeExpertise === topic.id ? null : topic.id)}>
+          {topic.label}<span className="expertise-caret" aria-hidden="true">⌄</span>
+        </button>
+      ))}
+    </div>
+  </div>
+  <div className="container expertise-disclosure" id="expertise-detail" role="region" aria-label="Service details" hidden={!selectedService}>
+    {selectedService && (
+      <div className="expertise-detail-card">
+        <div className="expertise-detail-icon"><ServiceIcon title={selectedService.title} /></div>
+        <div className="expertise-detail-copy">
+          <p className="expertise-eyebrow">OUR EXPERTISE</p>
+          <h3>{selectedService.title}</h3>
+          <p>{selectedService.description}</p>
+          <div className="expertise-detail-actions">
+            <a href="#services" onClick={() => setActiveExpertise(null)}>Explore all services <span aria-hidden="true">↗</span></a>
+            <a href="#contact" onClick={() => setActiveExpertise(null)}>Discuss a project <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <button type="button" className="expertise-close" aria-label="Close service details" onClick={() => setActiveExpertise(null)}>×</button>
+      </div>
+    )}
+  </div>
+</section>
 
         <section id="services" className="section services-section">
           <div className="container"><div className="section-topline">OUR SERVICES</div><div className="section-intro"><div><h2>Technology expertise for a more secure,<br/><em>intelligent enterprise.</em></h2></div><p>From secure cloud foundations to AI adoption and tailored software, we help turn complex technology challenges into sustainable business value.</p></div>
